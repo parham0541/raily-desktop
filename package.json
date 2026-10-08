@@ -3,7 +3,10 @@
   "private": true,
   "version": "0.1.0",
   "description": "Raily - Life Planner",
-  "author": "Parham Shyasi",
+  "author": {
+    "name": "Parham Shyasi",
+    "email": "parham0541@gmail.com"
+  },
   "type": "module",
   "main": "electron/main.cjs",
   "scripts": {
@@ -58,13 +61,6 @@
         "portable"
       ],
       "icon": "build/icon.ico"
-    },
-    "linux": {
-      "target": [
-        "AppImage",
-        "deb"
-      ],
-      "category": "Utility"
     }
   }
 }
