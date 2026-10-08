@@ -1,0 +1,12 @@
+/* Raily custom cursor */
+
+html,
+body,
+#root,
+*,
+*:hover,
+*:active,
+*:focus,
+*:focus-visible {
+  cursor: url('/src/assets/cursor/dog-normal.png') 50 50, auto !important;
+}

@@ -1,0 +1,70 @@
+{
+  "name": "raily",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Raily - Life Planner",
+  "author": "Parham Shyasi",
+  "type": "module",
+  "main": "electron/main.cjs",
+  "scripts": {
+    "dev": "vite",
+    "electron": "electron electron/main.cjs",
+    "build": "tsc -b && vite build",
+    "lint": "oxlint",
+    "preview": "vite preview",
+    "dist": "npm run build && electron-builder",
+    "dist:win": "npm run build && electron-builder --win",
+    "dist:linux": "npm run build && electron-builder --linux"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "better-sqlite3": "^13.0.3",
+    "drizzle-orm": "^0.45.3",
+    "jalaali-js": "^2.0.1",
+    "lucide-react": "^1.52.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "recharts": "^3.10.1",
+    "tailwindcss": "^4.3.3"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^9.6.0",
+    "@types/node": "^24.13.3",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@vitejs/plugin-react": "^6.1.1",
+    "drizzle-kit": "^0.31.11",
+    "electron": "^44.5.1",
+    "electron-builder": "^26.0.12",
+    "oxlint": "^1.81.0",
+    "typescript": "~6.0.2",
+    "vite": "^8.3.0"
+  },
+  "build": {
+    "appId": "com.raily.app",
+    "productName": "Raily",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "drizzle/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": [
+        "nsis",
+        "portable"
+      ],
+      "icon": "build/icon.ico"
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "category": "Utility"
+    }
+  }
+}
