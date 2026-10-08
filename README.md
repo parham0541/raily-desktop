@@ -1,32 +1,227 @@
-# React + TypeScript + Vite
+# ⚡ Raily — کنترل زندگی، از یک نقطه
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+<p align="center">
+  <img src="build/icon.ico" alt="Raily Logo" width="100" />
+</p>
 
-Currently, two official plugins are available:
+<h3 align="center">
+  برنامه‌ریزی کن. پیشرفتت رو ببین. مسیرت رو بساز.
+</h3>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+<p align="center">
+  یک اپلیکیشن دسکتاپ برای برنامه‌ریزی زندگی، مدیریت کارها و ساختن یک مسیر هدفمندتر؛ با تمرکز بر تجربه کاربری مدرن، سرعت و مالکیت داده‌ها.
+</p>
 
-## React Compiler
+<p align="center">
+  <a href="https://github.com/parham0541/raily-desktop">
+    <img src="https://img.shields.io/badge/GitHub-Source_Code-181717?style=for-the-badge&logo=github" alt="Source Code" />
+  </a>
+  <img src="https://img.shields.io/badge/Platform-Windows%20%7C%20Linux-2563EB?style=for-the-badge" alt="Platforms" />
+  <img src="https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
+  <img src="https://img.shields.io/badge/Electron-Desktop-47848F?style=for-the-badge&logo=electron&logoColor=white" alt="Electron" />
+  <img src="https://img.shields.io/badge/License-Not%20Specified-gray?style=for-the-badge" alt="License not specified" />
+</p>
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the Oxlint configuration
+## 🧠 Raily چیه؟
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+**Raily فقط یک لیست از کارهای روزانه نیست؛ ایده‌اش اینه که برنامه‌ریزی رو به بخشی از زندگی واقعی تبدیل کنه.**
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+همه‌مون هدف‌هایی داریم که مدام به فردا موکول می‌شن. کارهایی که فراموش می‌شن و برنامه‌هایی که بین درس، کار و زندگی روزمره گم می‌شن.
+
+Raily با هدف ساخت یک محیط دسکتاپ مدرن برای مدیریت بهتر این مسیر توسعه داده می‌شه؛ محیطی که بتونه برنامه‌ریزی، پیگیری کارها و نگاه‌کردن به روند پیشرفت رو در یک تجربه منسجم کنار هم قرار بده.
+
+این پروژه با استفاده از فناوری‌های وب ساخته شده اما برای اجرا به‌عنوان یک اپلیکیشن دسکتاپ طراحی شده است.
+
+## ✨ چرا Raily؟
+
+- 🖥️ **تجربه دسکتاپ:** یک اپلیکیشن مستقل به‌جای وابستگی به یک تب مرورگر.
+- ⚛️ **رابط کاربری مدرن:** ساخته‌شده با React و ابزارهای جدید فرانت‌اند.
+- 🗄️ **ذخیره‌سازی محلی:** استفاده از SQLite برای معماری مبتنی بر دیتابیس محلی.
+- 📊 **قابلیت نمایش داده‌ها:** استفاده از Recharts برای ساخت نمودارها و نمایش اطلاعات.
+- 📅 **توجه به تقویم فارسی:** استفاده از `jalaali-js` برای کار با تاریخ‌های جلالی.
+- 🧩 **ساختار قابل توسعه:** استفاده از TypeScript، Electron و Drizzle ORM برای توسعه و نگهداری بهتر کد.
+
+> هدف اینه که Raily به ابزاری تبدیل بشه که به‌جای پیچیده‌ترکردن زندگی، مدیریت اون رو ساده‌تر کنه.
+
+## 🛠️ فناوری‌های استفاده‌شده
+
+| فناوری | کاربرد |
+|---|---|
+| Electron | اجرای اپلیکیشن به‌صورت دسکتاپ |
+| React 19 | ساخت رابط کاربری |
+| TypeScript | توسعه با تایپ‌های مشخص |
+| Vite | ابزار توسعه و Build |
+| Tailwind CSS 4 | استایل‌دهی رابط کاربری |
+| SQLite | دیتابیس محلی |
+| Better SQLite3 | ارتباط با SQLite |
+| Drizzle ORM | کار با ساختار و عملیات دیتابیس |
+| Drizzle Kit | مدیریت Migrationها |
+| Recharts | نمودارها و نمایش داده‌ها |
+| Lucide React | آیکون‌های رابط کاربری |
+| Jalaali JS | ابزارهای تاریخ جلالی |
+
+## 🏗️ معماری پروژه
+
+Raily از ترکیب فناوری‌های وب و قابلیت‌های دسکتاپ استفاده می‌کند.
+
+```text
+Raily
+├── electron/
+│   ├── main.cjs
+│   ├── preload.cjs
+│   └── database.cjs
+│
+├── src/
+│   └── رابط کاربری و کدهای برنامه
+│
+├── drizzle/
+│   ├── فایل‌های Migration
+│   └── meta/
+│
+├── public/
+│   └── فایل‌های عمومی
+│
+├── build/
+│   └── منابع موردنیاز Build
+│
+├── package.json
+├── drizzle.config.ts
+└── vite.config.ts
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+**نکته:** این ساختار نمای کلی پوشه‌های اصلی پروژه است؛ فایل‌ها و زیرپوشه‌های داخلی `src` و سایر بخش‌ها ممکن است با توسعه پروژه تغییر کنند.
+
+## 🚀 اجرای پروژه در محیط توسعه
+
+### پیش‌نیازها
+
+- [Node.js](https://nodejs.org/)
+- npm
+- Git
+
+### ۱. دریافت سورس
+
+```bash
+git clone https://github.com/parham0541/raily-desktop.git
+cd raily-desktop
+```
+
+### ۲. نصب وابستگی‌ها
+
+```bash
+npm install
+```
+
+### ۳. اجرای رابط کاربری
+
+```bash
+npm run dev
+```
+
+### ۴. اجرای اپلیکیشن Electron
+
+در یک ترمینال دیگر، با توجه به اسکریپت‌های فعلی پروژه:
+
+```bash
+npm run electron
+```
+
+> اجرای کامل اپلیکیشن ممکن است به آماده‌بودن دیتابیس و تنظیمات محیط توسعه نیاز داشته باشد. روش راه‌اندازی اولیه دیتابیس باید مطابق پیاده‌سازی فعلی `electron/database.cjs` انجام شود.
+
+## 📦 ساخت نسخه اجرایی
+
+اسکریپت‌های زیر در `package.json` تعریف شده‌اند.
+
+### ساخت نسخه ویندوز
+
+```bash
+npm run dist:win
+```
+
+### ساخت نسخه لینوکس
+
+```bash
+npm run dist:linux
+```
+
+### ساخت عمومی
+
+```bash
+npm run dist
+```
+
+خروجی‌های بسته‌بندی در پوشه `release/` قرار می‌گیرند.
+
+برای ساخت نسخه نهایی روی هر سیستم‌عامل، ممکن است به ابزارها و وابستگی‌های مخصوص همان سیستم‌عامل نیاز داشته باشید.
+
+## 🗃️ دیتابیس و Migrationها
+
+Raily از SQLite برای ذخیره‌سازی محلی و از Drizzle برای مدیریت ساختار دیتابیس استفاده می‌کند.
+
+فایل‌های Migration در پوشه `drizzle/` نگهداری می‌شوند تا تغییرات ساختار دیتابیس قابل پیگیری باشند.
+
+فایل دیتابیس واقعی کاربر، مانند `raily.db`، نباید به‌صورت پیش‌فرض بخشی از سورس عمومی باشد؛ چون ممکن است شامل اطلاعات شخصی باشد.
+
+برای مشارکت‌کنندگان و افرادی که سورس را دریافت می‌کنند، مسیر ساخت دیتابیس خالی و اجرای Migrationها باید از طریق سازوکار راه‌اندازی پروژه فراهم شود.
+
+## 🧭 مسیر توسعه
+
+Raily یک پروژه در حال توسعه است. جهت‌گیری کلی آن ساخت تجربه‌ای منسجم‌تر برای برنامه‌ریزی و مدیریت زندگی روزمره است.
+
+بخش‌های زیر می‌توانند در مسیر توسعه و تکمیل پروژه قرار بگیرند:
+
+- [ ] تکمیل راه‌اندازی خودکار دیتابیس برای اجرای اولیه
+- [ ] مستندسازی کامل قابلیت‌های فعلی برنامه
+- [ ] بهبود تجربه کاربری و دسترس‌پذیری
+- [ ] گسترش قابلیت‌های برنامه‌ریزی و پیگیری اهداف
+- [ ] بهبود فرآیند Build و انتشار نسخه‌ها
+- [ ] تهیه راهنمای مشارکت برای توسعه‌دهندگان
+
+این موارد برنامه‌های پیشنهادی توسعه هستند و لزوماً به معنی پیاده‌سازی‌شدن آن‌ها در نسخه فعلی نیستند.
+
+## 🤝 مشارکت در توسعه
+
+اگر به توسعه اپلیکیشن‌های دسکتاپ، React، Electron یا ابزارهای بهره‌وری علاقه‌مند هستید، می‌توانید سورس پروژه را بررسی کنید و برای بهبود آن پیشنهاد بدهید.
+
+۱. مخزن را Fork کنید.
+
+۲. یک Branch جدید بسازید:
+
+```bash
+git checkout -b feature/your-feature
+```
+
+۳. تغییرات خود را Commit کنید:
+
+```bash
+git commit -m "feat: add your feature"
+```
+
+۴. تغییرات را Push کنید:
+
+```bash
+git push origin feature/your-feature
+```
+
+۵. یک Pull Request ایجاد کنید.
+
+لطفاً پیش از ارسال تغییرات، ساختار فعلی پروژه را بررسی کنید و فایل‌های شخصی، دیتابیس واقعی و اطلاعات محرمانه را وارد Commit نکنید.
+
+## 👨‍💻 سازنده
+
+**Parham Shyasi**
+
+توسعه‌دهنده Raily
+
+- GitHub: [@parham0541](https://github.com/parham0541)
+- Repository: [raily-desktop](https://github.com/parham0541/raily-desktop)
+
+---
+
+<p align="center">
+  <strong>زندگی منتظر نمی‌مونه؛ مسیرت رو آگاهانه بساز.</strong>
+  <br />
+  Made with ❤️ by Parham Shyasi
+</p>
