@@ -223,5 +223,5 @@ git push origin feature/your-feature
 <p align="center">
   <strong>زندگی منتظر نمی‌مونه؛ مسیرت رو آگاهانه بساز.</strong>
   <br />
-  Made with ❤️ by Parham Shyasi
+  Made with ❤️ by Parham Shyasi and H.H
 </p>
